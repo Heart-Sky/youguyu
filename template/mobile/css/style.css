@@ -1,0 +1,138 @@
+@font-face {font-family:myFont; src: url("../official.ttf")}  
+body{
+	background: url(../images/imagesPage/shop.jpg);
+	font-size: 12px;
+}
+		#shop{
+			font-size: 1.4rem;
+			color: #282D4C;
+			text-align: center;
+			font-family: 微软雅黑;
+			margin: 0;
+			padding-bottom: 5px;
+			padding-top: 10px;
+		}
+		h2{
+			font-size: 1.1rem;
+			color: #3176CA;
+			text-align: center;
+			font-family: 微软雅黑;
+			margin: 0;
+			padding: 0;
+			padding-bottom: 7px;
+			padding-top: 5px;
+		}
+		.tip1{
+			font-size: 1rem;
+			color: #81817F;
+			text-align: center;
+			margin: 0;
+			padding-bottom: 6px;
+			font-family: myFont;
+		}
+		span{
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: #282D4C;
+			margin-left: 10px;
+			font-family: myFont;
+		}
+
+		span em{
+			font-size: 0.8rem;
+			color: #999;
+		}
+
+		.oneline{
+			width: 70%;
+			height: 1.2rem;
+			border-radius: 30px;
+			border: none;
+			color: #ccc;
+			text-align: center;
+			font-family: myFont;
+			margin-bottom: 8px;
+		}
+		.oneword{
+			margin-left: 0;
+		}
+
+		.birth{
+			width: 10%;
+			height: 1.2rem;
+			border-radius: 10px;
+			border: none;
+			text-align: center;
+			margin-right: 3px;
+			margin-bottom: 8px;
+			margin-left: 5px;
+		}
+
+		input.fourword{
+			width: 64%;
+		}
+
+		span.fourword{
+			margin-left: 8px;
+		}
+
+		.onbottom{
+			width: 90%;
+			height: 1.2rem;
+			margin-left: 15px;
+			margin-top: 7px;
+			margin-bottom: 8px;
+			border: none;
+			border-radius: 10px;
+			color: #ccc;
+			font-family: myFont;
+			font-size: 1.1rem;
+			padding: 7px;
+		}
+
+		#shopintro{
+			width: 90%;
+			height: 4rem;
+		}
+		
+		.uploadbtn{
+			padding-left: 35%;
+			display: block;
+		}
+
+		.imglist{
+			margin-left: 15px;
+			min-height:80px;
+			/*border: 1px solid blue;*/
+			display: none;
+		}
+
+  		.imglist img{
+  			width:22%;
+  			height:80px;
+  			margin: 5px;
+  		}
+
+  		#protocol{
+  			margin-left: 15px;
+  			margin-top: 8px;
+  		}
+
+  		#agree{
+  			text-decoration: none;
+  			font-size: 0.9rem;
+  			font-family: myFont; 
+  		}
+
+  		.sub{
+  			width: 90%;
+  			height: 34px;
+  			border: none;
+  			background: #308FDB;
+  			color: white;
+  			margin-left: 4%;
+  			margin-top: 10px;
+  			border-radius: 30px;
+  			font-size: 24px;
+  			font-family: myFont;
+  		}

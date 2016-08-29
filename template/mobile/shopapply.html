@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实体店铺商家申请</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta charset='utf-8' />
+	<link rel="stylesheet" type="text/css" href="http://115.159.65.240/pro/addons/HeartSky_my/template/mobile/css/style.css">
+	<script src="js/jquery.js"></script>
+	<script type='text/javascript' src='http://115.159.65.240/pro/addons/HeartSky_my/template/mobile/js/LocalResizeIMG.js'></script>
+	<script type='text/javascript' src='http://115.159.65.240/pro/addons/HeartSky_my/template/mobile/js/patch/mobileBUGFix.mini.js'></script>
+	<script type="text/javascript" src="http://115.159.65.240/pro/addons/HeartSky_my/template/mobile/js/action.js"></script>
+	
+</head>
+<body>
+	<h1 id="shop">实体店掌柜申请</h1>
+	<form id="shopForm" aciton="" method="POST">
+
+
+		<h2 class="log_info">登录信息</h2>
+
+		<p class="tip1">（申请成功后，此处用户名及密码用于登录商家后台）</p>
+
+		<span>用户名：</span><input type="text" id="username" name="username" placeholder="用户名只可使用字母、数字及下划线" class="oneline" required /><br />
+		<span>密&nbsp;&nbsp;码：</span><input type="password" id="passkey" name="password" class="oneline" required /><br />
+
+
+		<h2 class="shoper_info">店主信息</h2>
+
+		<span>姓&nbsp;&nbsp;名：</span><input type="text" id="realname" name="name" class="oneline" required /><br />
+
+		<span>性&nbsp;&nbsp;别：</span><input type="radio" id="sex" name="sex" checked="checked" value="man" /><span class="oneword">男</span>
+		<input type="radio" id="sex" name="sex" /><span class="oneword" value="woman">女</span>
+
+		<span class="age">年龄：</span><input type="text" name="age" id="age" class="birth" required /><span class="oneword">岁</span><br />
+
+		<span class="fourword">身份证号：</span><input type="text" id="idcard" name="id_number" class="oneline fourword" required /><br />
+
+		<span class="fourword">联系电话：</span><input type="text" id="phone" name="phone" class="oneline fourword" required /><br />
+
+		<span>邮&nbsp;&nbsp;&nbsp; 箱：</span><input type="text" id="email" name="email" class="oneline fourword" required /><br />
+
+
+		<h2 class="shop_info">店铺信息</h2>
+
+		<span class="fourword">店铺名称：</span><input type="text" id="shopname" name="shop_name" class="oneline fourword" required /><br />
+
+		<span class="fourword">店铺详细地址：</span><input type="text" id="shopadd" name="shop_add" class="onbottom" placeholder="如：浙江省杭州市**街**号" required /><br />
+
+		<span>店铺简介:<em>（不超过200个字）</em></span>
+		<textarea rows="10" cols="70" maxlength="400" name="shop_info" id="shopintro" class="onbottom" required></textarea><br />
+
+
+		<h2 class="sub_photo">照片上传</h2>
+
+		<p class="tip1">（此处上传身份证正反面照片、手持身份证半身照、店铺门面照片、店内布局照片、营业执照清晰图，共6张）</p>
+		
+		<input type="file" name="photos" id="uploadphoto" style="display:none;" multiple />
+		<a href="javascript:;" onclick="uploadphoto.click()" class="uploadbtn"><img src="http://115.159.65.240/pro/addons/HeartSky_my/template/mobile/images/imagesPage/add.png" id="add" /></a>
+		<div class="imglist"></div>
+
+		<input type="checkbox" name="protocol" id="protocol" checked="checked" /><a href="" id="agree">同意优咕鱼商家注册协议</a><br />
+
+		<input type="submit" name="submit" value="提交申请" id="shopSub" class="sub" />
+
+		<input type="hidden" name="leaps" value="0">
+		<input type="hidden" name="token" value="{$_W['token']}">
+	</form>
+
+</body>
+</html>
